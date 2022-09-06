@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha - personal portfolio</title>
+
+    <!-- 
+    - favicon
+  -->
+    <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body id="top" class="dark_theme">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="navbar-actions">
+                <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
+                    <span class="icon"></span>
+                </button>
+
+            </div>
+
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="index.html" class="navbar-link">Home.</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#stats" class="navbar-link">About.</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#skills" class="navbar-link">Skills.</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#portfolio" class="navbar-link">Projects.</a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contact" class="navbar-link">Contact.</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+
+
+
+    <main>
+        <article class="container">
+            <div class="project-holder" id="skin">
+                <div class="holder">
+                    <picture class="cover">
+                        <source srcset="./assets/images/project-5.png" media="(min-width: 768px)">
+                        <source srcset="./assets/images/project-5.png" media="(min-width: 500px)">
+                        <img src="./assets/images/project-5.png" alt="poster" class="w-100">
+                    </picture>
+                    <div class="description">
+                        <h2 class="h3 section-title">Ultimate Cat Feeder</h2>
+                        <h3 class="section-text">Pervasive Interaction Design Project</h3>
+                        <div class="title "> Background</div>
+                        <p class="section-text">The pet-care market lacks comprehensive health monitoring and management
+                            products for cats, resulting in owners relying on vets for all their questions.
+                            Additionally, cat owners lack knowledge of the consequences of overfeeding and the different
+                            types of diseases that are related to overfeeding.
+                        </p>
+                        <div class="title"> Problem Statement</div>
+                        <p class="section-text">Support cat owners’ desire and effort to track and understand their
+                            cats’ habits and health metrics while creating a safe space for their cat to eat.</p>
+                        <div class="title"> Solution</div>
+                        <p class="section-text">An automated IoT device that measures and tracks key cat health metrics
+                            like weight, food, and water intake while limiting feeder access to authorized pets via a
+                            sensor. Cat owners can customize their experience and indicate when and how much their
+                            cat(s) should eat. Over time, the feeder collects pertinent information to show owners data
+                            on their pet’s eating and drinking habits - including changes and potential adjustments.
+                        </p>
+                        <div class="title"> Challenges</div>
+                        <ol class="section-text">
+                            <li>1. With many cat feeder devices available on market, creating a new cat device had to
+                                stand out and should serve more than scheduling feeding time.
+                            </li>
+                            <li>2. Changing old habits of the owner and re-training pets to start something new is
+                                tough, and many times owners want to stick to their schedule.
+                            </li>
+                            <li>3. Identifying cat owners who are willing to participate in the study and let us monitor
+                                their relationship with their cats to gain a deeper understanding of the interaction.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="process col-md-10">
+                    <h2 class="title">Development Process</h2>
+                    <ul class="infoGraphic">
+                        <li>
+                            <div class="numberWrap">
+                                <div class="number fontColor1">1</div>
+                                <div class="coverWrap">
+                                    <div class="numberCover"></div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="icon iconCodepen"></div>
+                                <h2>Research Study & Findings</h2>
+                                <p>To ground our understanding of cats’ feeding habits, owner concerns, and other issues
+                                    they face regarding their cats, we conducted a 4-day diary study with five
+                                    volunteers who were primary caretakers. During this study, participants outlined
+                                    their interactions with their pets and feelings about their health, and the
+                                    obstacles they faced as cat owners. To supplement and support our diary study
+                                    results, we surveyed 39 cat owners with cats ranging from kitten to senior age.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numberWrap">
+                                <div class="number fontColor2">2</div>
+                                <div class="coverWrap">
+                                    <div class="numberCover"></div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="icon iconSocial"></div>
+                                <h2>User Enactments Study</h2>
+                                <p>A speed dating matrix was developed with three dimensions and five scenarios based on
+                                    the feasibility and reasonableness of implementing those tasks. The selected speed
+                                    dating scenarios were then converted into actionable tasks using props and were then
+                                    user tested.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numberWrap">
+                                <div class="number  fontColor3">3</div>
+                                <div class="coverWrap">
+                                    <div class="numberCover"></div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="icon iconAirplane"></div>
+                                <h2>System Prototype</h2>
+                                <p>Based on user test feedback, a system-level design was sketched with all the features
+                                    which covered the user's needs. Among the components of the finalized system
+                                    proposal were a cat house with a weighted food bowl that would monitor food intake,
+                                    a pet weight scale to monitor cat weight, a water level monitor to monitor cat
+                                    hydration, and an integrated camera detecting the presence of a designated animal to
+                                    open the door when it senses the animal.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numberWrap">
+                                <div class="number  fontColor4">4</div>
+                                <div class="coverWrap">
+                                    <div class="numberCover"></div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="icon iconMap"></div>
+                                <h2>Wizard Of Oz</h2>
+                                <p>Given the complexity of the device, it would take an extended time and money to
+                                    develop a fully functioning, high-fidelity prototype. The 'Wizard of Oz' technique
+                                    was used to demonstrate our product to the audience using easy-to-get and cheap
+                                    materials. To automate the proposed device we integrated an IOT component that
+                                    indicated when its was food time, when food quantity is low and when other pets try
+                                    get in.
+                                </p>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="numberWrap">
+                                <div class="number  fontColor5">5</div>
+                                <div class="coverWrap">
+                                    <div class="numberCover"></div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="icon iconBulb"></div>
+                                <h2>Educate</h2>
+                                <p>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                            </div>
+                        </li> -->
+                        <!--     <li>
+                              <div class="numberWrap">
+                              <div class="number  fontColor6">6</div>
+                              <div class="coverWrap">
+                                <div class="numberCover"></div>
+                              </div>
+                                </div>
+                              <div class="content">
+                                <div class="icon iconPeace"></div>
+                                <h2>Succeed</h2>
+                                <p>Sagittis, audantium sem eveniet lacus pede porttitor aenean.</p>
+                              </div>
+                            </li> -->
+                    </ul>
+                    <div class="content space">
+                        <h2>Note:</h2>
+                        <p>To read a detailed report on this project, click on this button.
+                            <a class="report" target="_blank"
+                                href="https://www.notion.so/chuleichen/Milestone-4-Final-Design-cfff962dffe14dbe9384618e0113b8b0">Full
+                                Report</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+        </article>
+
+        <div class="navigation">
+            <a href="project1.html" class="previous round">&#8249;</a>
+            <a href="project3.html" class="next round">&#8250;</a>
+        </div>
+    </main>
+
+
+    <!-- 
+    - #FOOTER
+  -->
+    <footer class="footer">
+        <div class="container">
+
+            <li>
+                <ul class="contac-social-list">
+
+                    <li>
+                        <a href="#" class="contact-social-link">
+                            <div class="tooltip">Facebook</div>
+
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="contact-social-link">
+                            <div class="tooltip">Twitter</div>
+
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/neha-kumari-8a9106156/" class="contact-social-link">
+                            <div class="tooltip">Linkedin</div>
+
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/nehakumari2307" class="contact-social-link">
+                            <div class="tooltip">Github</div>
+
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+        <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

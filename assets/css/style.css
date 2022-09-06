@@ -579,7 +579,7 @@ main {
 
 .slide-down-btn {
     display: block;
-    color: var(--white);
+    color: var(--color-primary);
     font-size: 40px;
     max-width: max-content;
     margin-block-start: 40px;
@@ -1276,8 +1276,247 @@ textarea.input-field {
     transform: translateY(0);
 }
 
+/*-----------------------------------*\
+   * #Project Page
+  \*-----------------------------------*/
 
+.project-holder {
+    /* border: 1px solid #dfdfdf; */
+    /* width: 80vw; */
+    /* margin: 1rem auto; */
+    /* box-shadow: 0 10px 30px #dbf3f8; */
+    background: #fff;
+    padding: 1rem;
+    height: auto;
 
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 115px; */
+    /* margin-bottom: var(--section-padding); */
+    margin-top: var(--section-padding);
+}
+
+.project-holder .cover img {
+    /* height: 200px; */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    margin-left: 1rem;
+}
+
+.project-holder .description {
+    height: auto;
+    width: 100%;
+    /* width: 45rem; */
+    object-fit: cover;
+    border-radius: 30px;
+    padding: 1.5rem;
+    color: var(--color-primary);
+    background-color: var(--bg-primary);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12); */
+    margin-right: 1rem;
+}
+
+.project-holder .description h2 {
+    margin: 0px;
+    border-bottom: 1vmin solid var(--color-primary);
+}
+
+.project-holder .title {
+    padding: 0;
+    /* margin-top: 2.5rem; */
+    /* font-weight: 800; */
+    font-size: 20px;
+}
+
+.holder {
+    margin: 0.23rem 0 0.23rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+}
+
+/**
+   * process wizard
+   */
+
+.project-holder .process {
+    padding: 3rem 0.5rem;
+}
+
+.project-holder .process .title {
+    padding: 0 1rem 1rem;
+    font-size: 28px;
+}
+
+ul.infoGraphic {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul.infoGraphic li {
+    position: relative;
+    width: 100%;
+    max-width: 35em;
+    background: var(--bg1);
+    border-radius: 0.5em;
+    padding: 1em;
+    z-index: 1;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+ul.infoGraphic li .numberWrap {
+    position: absolute;
+}
+
+ul.infoGraphic li .numberWrap .number {
+    font-family: "maven pro", sans-serif;
+    font-size: 13em;
+    font-weight: 900;
+    width: 0.9em;
+    text-align: center;
+}
+
+ul.infoGraphic li .numberWrap .coverWrap {
+    transform: rotate(130deg);
+    position: absolute;
+    width: 18em;
+    height: 15em;
+    left: -3em;
+    top: -1em;
+}
+
+ul.infoGraphic li .numberWrap .coverWrap .numberCover {
+    position: absolute;
+    background: var(--bg1);
+    width: 18em;
+    height: 6em;
+    border-radius: 50% 50% 0 0;
+    border-bottom: 3px solid #f5f8f7;
+    transition: all 0.4s;
+}
+
+ul.infoGraphic li .numberWrap .coverWrap .numberCover::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: -10%;
+    width: 120%;
+    height: 150%;
+    background: radial-gradient(at bottom,
+            #48668533,
+            transparent,
+            transparent);
+    z-index: 1;
+}
+
+ul.infoGraphic li .content {
+    margin: 3em 0em 1em 10em;
+    position: relative;
+}
+
+ul.infoGraphic li .content h2 {
+    font-size: 1.7em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+ul.infoGraphic li .content p {
+    line-height: 1.5em;
+}
+
+/*-----------------------------------*\
+   * #Bottom Project navigation
+  \*-----------------------------------*/
+
+.navigation {
+    margin: 0 auto;
+    width: 20%;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navigation .previous {
+    background-color: var(--color-primary);
+    color: black;
+}
+
+.navigation .next {
+    background-color: var(--color-primary);
+    color: black;
+}
+
+.navigation .round {
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.report {
+    background-color: black;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: 14px;
+    color: white;
+    border-radius: 3rem;
+    display: inline;
+}
+
+.space {
+    margin: 5rem 0 0 5rem;
+}
+
+/*-----------------------------------*\
+   * #magnify images
+  \*-----------------------------------*/
+
+.image-preview {
+    /* height: 300px; */
+    cursor: zoom-in;
+}
+
+.magnifier-container {
+    display: inline-block;
+    position: relative;
+}
+
+.magnifier {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    overflow: hidden;
+    height: 600px;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.magnifier__img {
+    /* width: 400%; */
+    transform-origin: 150px 150px;
+}
 
 
 /*-----------------------------------*\
@@ -1384,10 +1623,31 @@ textarea.input-field {
         margin-inline: auto;
     }
 
+    /**
+     * Project Page
+     */
+
+    .holder {
+        margin: 0.23rem 0 0.23rem 0;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    /**
+    * Project Navigation
+    */
+
+    .navigation {
+        margin: 0 auto;
+        width: 10%;
+    }
+
+    .navigation .round {
+        border-radius: 50%;
+        margin: 1rem;
+    }
 }
-
-
-
 
 
 /**
@@ -1709,6 +1969,32 @@ textarea.input-field {
         margin-bottom: 0;
     }
 
+    /**
+    * Project page
+    */
+
+    .project-holder .holder {
+        margin: 0.23rem 0 0.23rem 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    /**
+    * Project Navigation
+    */
+
+    .navigation {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    .navigation .round {
+        border-radius: 50%;
+        margin: 1rem;
+    }
+
 }
 
 
@@ -1757,6 +2043,32 @@ textarea.input-field {
 
     .about-banner {
         max-width: 450px;
+    }
+
+    /**
+    * Project page
+    */
+
+    .project-holder .holder {
+        margin: 0.23rem 0 0.23rem 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    /**
+    * Project Navigation
+    */
+
+    .navigation {
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    .navigation .round {
+        border-radius: 50%;
+        margin: 1rem;
     }
 
 }

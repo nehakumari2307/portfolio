@@ -85,6 +85,29 @@ window.addEventListener("scroll", function () {
 });
 
 
+// /**
+//  * gallery
+//  */
+// import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
+// const options = {
+//     arrowPrev: true,
+// arrowNext: true,
+// zoom: true,
+// close: true,
+// imageClickAction: 'close',
+//   tapAction: 'close',
+//   // to apply styles just to this instance of PhotoSwipe
+//   mainClass: 'pswp--custom-icon-colors',
+
+//   gallery: '#gallery--responsive-images',
+//   children: 'a',
+//   pswpModule: () => import('/photoswipe/photoswipe.esm.js')
+// };
+
+// const lightbox = new PhotoSwipeLightbox(options);
+// lightbox.init();
+
+
 
 /**
  * navbar toggle

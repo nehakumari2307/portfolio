@@ -1649,6 +1649,61 @@ ul.infoGraphic li .content p {
     }
 }
 
+.pswp--custom-icon-colors {
+    --pswp-icon-color: #00fffc;
+    --pswp-icon-color-secondary: #333;
+  }
+
+.pswp-gallery {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    /* width: 155px; */
+}
+.position {
+    position: relative;
+}
+.card-gallery-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.card-gallery-content :is(.card-title, .publish-date) {
+    background: var(--bg-primary);
+    padding: 6px 12px;
+    width: max-content;
+    box-shadow: var(--shadow-1);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: var(--transition-1);
+}
+
+.card-gallery-content .publish-date {
+    font-size: var(--fs-6);
+    color: var(--color-primary);
+    transition-delay: 0s;
+}
+
+.project-card:is(:hover, :focus) :is(.card-title, .publish-date) {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-card:is(:hover, :focus) .publish-date {
+    transition-delay: 0.1s;
+}
+
+.pswp-gallery .pswp-gallery__item img {
+    cursor: pointer !important;
+    width: 100% ;
+    border-radius: 0.5rem;
+}
+
 
 /**
    * responsive for larger than 992px screen
@@ -1928,8 +1983,22 @@ ul.infoGraphic li .content p {
         margin: 25px;
         margin-left: 0;
     }
+/* WORK
+*/
 
+.work-list {
+    column-count: 3;
+}
 
+.work-list>li:first-child {
+    column-span: unset;
+    margin: 25px;
+    margin-left: 0;
+}
+
+.work {
+    padding-block: var(--section-padding);
+}
 
     /**
      * CONTACT

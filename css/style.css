@@ -1290,10 +1290,10 @@ textarea.input-field {
     height: auto;
 
     /* min-height: 100vh; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* padding-top: 115px; */
     /* margin-bottom: var(--section-padding); */
     margin-top: var(--section-padding);
@@ -1325,6 +1325,7 @@ textarea.input-field {
 .project-holder .description h2 {
     margin: 0px;
     border-bottom: 1vmin solid var(--color-primary);
+    margin: 1rem;
 }
 
 .project-holder .title {
@@ -2016,7 +2017,7 @@ ul.infoGraphic li .content p {
     }
 
     .section-title {
-        max-width: 520px;
+        max-width: 1000px;
     }
 
 
